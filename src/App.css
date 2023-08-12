@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* - White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: hsl(212, 45%, 89%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App{
+    height: 498px;
+    width: 320px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(123, 135, 157, 0.26);
 }
-
-.App-link {
-  color: #61dafb;
+img{
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3{
+    color: hsl(218, 44%, 22%);
+    font-size: 22.5px;
+    font-weight: 700;
+    margin: 30px 0 0 0;
+}
+p{
+    color: hsl(220, 15%, 55%);
+    font-size: 16px;
+    margin: 20px 0 0 0;
+    font-weight: 400;
 }
